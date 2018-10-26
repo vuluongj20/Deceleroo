@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About - Decele'roo</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-126879157-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-126879157-2');
+  </script>
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/about.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrap" ng-app="" ng-init="pages=['Videos','Podcast','About']">
+      <div class="nav-background">
+      </div>
+      <div class="small-screen">
+        <a href="./" class="nav-link logo logo-normal">Decele'roo</a>
+      </div>
+      <div class="nav-inner-wrap">
+        <ul class="nav-bar">
+          <li class="nav-item">
+            <a href="./" class="nav-link logo-normal">Decele'roo</a>
+          </li>
+          <li class="nav-item" ng-repeat="x in pages">
+            <a href="{{ x | lowercase}}" class="nav-link" ng-bind="x"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-ham">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="mobile-nav-wrap">
+        <ul class="mobile-nav-bar">
+          <li class="mobile-nav-item" ng-repeat="x in pages">
+            <a href="{{ x | lowercase}}" class="nav-link" ng-bind="x"></a>
+            <a href="{{ x | lowercase}}" class="link-box"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="header-wrap vh-fix">
+      <div class="header-box center">
+        <h1 class="header-text">About us</h1>
+      </div>
+    </div>
+    <div class="what-wrap">
+      <div class="inner-wrap">
+        <div class="text-box center-ar">
+          <h1 class="title what-title">The What</h1>
+          <p class="text">You're like a kangaroo, speeding through life... But sometimes it's good to decelerate, to give yourself some rest. This page is the product of our cumulative effort to promote mental health awareness, and help you enjoy life to the fullest.</p>
+        </div>
+      </div>
+    </div>
+    <div class="who-wrap">
+      <div class="inner-wrap">
+        <div class="text-box center-ar">
+          <h1 class="title who-title">The Who</h1>
+          <p class="text">Get to know the people behind the curtains. Wish to learn content production? Interested in discussing student wellness? Or are you just grateful and want to say thanks? Contact us!</p>
+          <img class="portrait" src="media/vu.jpg">
+          <p class="text text-bold">Vu Luong</p>
+          <p class="text">Vu built the website and produced the Surviving to Thriving video series.</p>
+          <p class="text">He is an intentioned designer, a data enthusiast, a project leader, and a shameless self-promoter.</p>
+          <p class="text">Contact him here:
+            <a class="text" href="mailto:vu@deceleroo.com" style="">vu@deceleroo.com</a>
+          </p>
+          <img class="portrait" src="media/aakshi.jpg">
+          <p class="text text-bold">Aakshi Sinha</p>
+          <p class="text">Aakshi gave you the Wise Mind podcast.</p>
+          <p class="text">She is an artist and a musician that wants to show the world how magical human beings can be.</p>
+          <p class="text">Contact her here:
+            <a class="text" href="mailto:aakshi@deceleroo.com" style="">aakshi@deceleroo.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="how-wrap">
+      <div class="inner-wrap">
+        <div class="text-box center-ar">
+          <h1 class="title how-title">The How</h1>
+          <p class="text">We hope you enjoy everything. If you want to contribute to the project, there are two ways to do so :)</p>
+          <p class="text text-bold">Suggest content</p>
+          <p class="text">Contact us through the email addresses above to suggest content for the website. It could be something you found online, or something you produced.</p>
+          <p class="text text-bold">Be our Patreon</p>
+          <p class="text">Running a website costs. Video/audio equipment costs a lot. And we're broke... Donate now and help us in our efforts!</p>
+          <a class="text" href="https://www.patreon.com/deceleroo" style="">Visit our Patreon page.</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-inner-wrap">
+        <div class="footer-para footer-copyright">
+          <p class="footer-text">Copyright © 2019 Decele'roo. All rights reserved.</p>
+        </div>
+        <div class="footer-para footer-contact">
+          <p class="footer-text">Questions?
+          <a href="mailto:info@deceleroo.com" class="footer-mail">info@deceleroo.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script src="style/jquery.js"></script>
+  <script src="style/custom.js"></script>
+  <script src="style/vh-fix.js"></script>
+</body>

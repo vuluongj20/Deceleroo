@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Podcast - Decele'roo</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-126879157-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-126879157-2');
+  </script>
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/podcast.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrap" ng-app="" ng-init="pages=['Videos','Podcast','About']">
+      <div class="nav-background">
+      </div>
+      <div class="small-screen">
+        <a href="./" class="nav-link logo logo-normal">Decele'roo</a>
+      </div>
+      <div class="nav-inner-wrap">
+        <ul class="nav-bar">
+          <li class="nav-item">
+            <a href="./" class="nav-link logo-normal">Decele'roo</a>
+          </li>
+          <li class="nav-item" ng-repeat="x in pages">
+            <a href="{{ x | lowercase}}" class="nav-link" ng-bind="x"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-ham">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="mobile-nav-wrap">
+        <ul class="mobile-nav-bar">
+          <li class="mobile-nav-item" ng-repeat="x in pages">
+            <a href="{{ x | lowercase}}" class="nav-link" ng-bind="x"></a>
+            <a href="{{ x | lowercase}}" class="link-box"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="header-wrap vh-fix">
+      <div class="header-text-box podcast-header-text center">
+        <h1 class="text">Close your eyes,<br>and listen.</h1>
+      </div>
+    </div>
+    <div class="section-wrap vh-fix">
+      <div class="text-box podcast-section-text center">
+        <h1 class="text">Welcome to the Wise Mind Podcast!
+          <br>This is a series of five episodes where we talk about all things emotional intelligence, in collaboration with Mental Health Services at Minerva.</h1>
+      </div>
+    </div>
+    <div class="section-wrap vh-fix">
+      <div class="text-box podcast-section-text center">
+        <h1 class="text">E1 - Emotions</h1>
+        <a class="text" href="wm01">Listen now.</a>
+      </div>
+    </div>
+    <div class="section-wrap vh-fix">
+      <div class="text-box podcast-section-text center">
+        <h1 class="text">E2 - Biological Basis of Emotions</h1>
+        <a class="text" href="wm02">Listen now.</a>
+      </div>
+    </div>
+    <div class="section-wrap vh-fix">
+      <div class="text-box podcast-section-text center">
+        <h1 class="text">E3 - Socio-environmental Basis of Emotions</h1>
+        <a class="text" href="wm03">Listen now.</a>
+      </div>
+    </div>
+    <div class="section-wrap vh-fix">
+      <div class="text-box podcast-section-text center">
+        <h1 class="text">Patience is key.
+          <br>The fourth and fifth episodes will be released next semester.</h1>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-inner-wrap">
+        <div class="footer-para footer-copyright">
+          <p class="footer-text">Copyright © 2019 Decele'roo. All rights reserved.</p>
+        </div>
+        <div class="footer-para footer-contact">
+          <p class="footer-text">Questions?
+          <a href="mailto:info@deceleroo.com" class="footer-mail">info@deceleroo.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script src="style/jquery.js"></script>
+  <script src="style/custom.js"></script>
+  <script src="style/vh-fix.js"></script>
+</body>

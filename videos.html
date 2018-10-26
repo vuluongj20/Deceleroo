@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Videos - Decele'roo</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-126879157-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-126879157-2');
+  </script>
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/videos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrap" ng-app="" ng-init="pages=['Videos','Podcast','About']">
+      <div class="nav-background">
+      </div>
+      <div class="small-screen">
+        <a href="./" class="nav-link logo logo-normal">Decele'roo</a>
+      </div>
+      <div class="nav-inner-wrap">
+        <ul class="nav-bar">
+          <li class="nav-item">
+            <a href="./" class="nav-link logo-normal">Decele'roo</a>
+          </li>
+          <li class="nav-item" ng-repeat="x in pages">
+            <a href="{{ x | lowercase}}" class="nav-link" ng-bind="x"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-ham">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="mobile-nav-wrap">
+        <ul class="mobile-nav-bar">
+          <li class="mobile-nav-item" ng-repeat="x in pages">
+            <a href="{{ x | lowercase}}" class="nav-link" ng-bind="x"></a>
+            <a href="{{ x | lowercase}}" class="link-box"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="header-wrap vh-fix">
+      <div class="box-shadow header-left">
+        <div class="inner-header-left">
+      	  <h1 class="header-surviving">Surviving</h1>
+      	  <h1 class="header-t large-screen">t</h1>
+      	  <h1 class="headers-to small-screen">to</h1>
+        </div>
+      </div>
+      <div class="box-shadow header-right">
+        <div class="inner-header-right">
+  	      <img src="media/sunrise.jpg" class="sunrise" alt="Sunrise">
+  	      <h1 class="header-thriving">Thriving</h1>
+  	      <h1 class="header-o large-screen">o</h1>
+  	      <h1 class="headers-to-down small-screen">to</h1>
+        </div>
+      </div>
+    </div>
+    <div class="description-wrap vh-fix">
+      <div class="description-box">
+        <div class="description-text-box center-ar">
+	        <p class="description-text">We hope that you enjoy your new city. Here's some useful tips to get you from merely surviving to positively thriving in it.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section-wrap vh-fix">
+      <div class="image-wrap">
+        <div class="inner-image">
+  	      <img src="media/anggun.jpg">
+        </div>
+        <a class="link-box" href="s2t1"></a>
+      </div>
+      <div class="text-wrap">
+        <a class="link-box" href="s2t1"></a>
+        <div class="text-box center">
+  	      <h1 class="video-title">Hairless Apes</h1>
+  	  	  <p class="video-text">A teaser for what's to come.</p>
+          <a class="video-text" href="s2t1">Watch now.</a>
+  	    </div>
+      </div>
+    </div>
+    <div class="section-wrap vh-fix">
+      <div class="image-wrap">
+        <div class="inner-image">
+  	      <img src="media/natalia.jpg">
+        </div>
+        <a class="link-box" href="s2t2"></a>
+      </div>
+      <div class="text-wrap">
+        <a class="link-box" href="s2t2"></a>
+        <div class="text-box center">
+  	      <h1 class="video-title">Ep 1 - Dear '22</h1>
+  	  	  <p class="video-text">SF. Freshman year. Here's some tips that we have for you.</p>
+          <a class="video-text" href="s2t2">Watch now.</a>
+  	    </div>
+      </div>
+    </div>
+    <div class="wait-wrap vh-fix">
+      <div class="wait-inner-wrap">
+        <div class="text-box center-ar">
+          <h1 class="video-title">Come back soon</h1>
+    	    <p class="video-text">We'll release the second episode shortly.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-inner-wrap">
+        <div class="footer-para footer-copyright">
+          <p class="footer-text">Copyright © 2019 Decele'roo. All rights reserved.</p>
+        </div>
+        <div class="footer-para footer-contact">
+          <p class="footer-text">Questions?
+          <a href="mailto:info@deceleroo.com" class="footer-mail">info@deceleroo.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script src="style/jquery.js"></script>
+  <script src="style/custom.js"></script>
+  <script src="style/vh-fix.js"></script>
+</body>

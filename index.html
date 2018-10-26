@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Decele'roo</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-126879157-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-126879157-2');
+  </script>
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+  <nav>
+    <div class="nav-wrap" ng-app="" ng-init="pages=['Videos','Podcast','About']">
+      <div class="nav-background">
+      </div>
+      <div class="small-screen">
+        <a href="./" class="nav-link logo logo-normal">Decele'roo</a>
+      </div>
+      <div class="nav-inner-wrap">
+        <ul class="nav-bar">
+          <li class="nav-item">
+            <a href="./" class="nav-link logo-normal">Decele'roo</a>
+          </li>
+          <li class="nav-item" ng-repeat="x in pages">
+            <a href="{{ x | lowercase}}" class="nav-link" ng-bind="x"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-ham">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="mobile-nav-wrap">
+        <ul class="mobile-nav-bar">
+          <li class="mobile-nav-item" ng-repeat="x in pages">
+            <a href="{{ x | lowercase}}" class="nav-link" ng-bind="x"></a>
+            <a href="{{ x | lowercase}}" class="link-box"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="header-container vh-fix">
+      <div class="header-wrap">
+        <div class="header-text-wrap">
+          <div class="header-text">
+            <h1 class="header-text-white">To make your day
+              <br>a little bit</h1>
+            <h1 class="header-text-gold">brighter.</h1>
+          </div>
+        </div>
+        <div class="header-vid-wrap">
+          <div class="header-vid">
+            <video autoplay muted playsinline loop>
+              <source src="media/preview.mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news-container vh-fix">
+      <div id="strip-1" class="strip vh-fix">
+        <div class="news-box-wrap-left">
+          <div class="news-box box-left">
+            <img src="media/heart.png">
+            <a class="link-box" href="wm03"></a>
+            <div class="box-text">
+              <div class="box-text-wrap">
+                <h1 class="type-text">PODCAST</h1>
+                <h1 class="name-title">Culture & Emotion</h1>
+                <a class="box-link" href="/wm03">Listen now.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-box-wrap-right">
+          <div class="news-box box-right">
+            <img src="media/natalia.jpg">
+            <a class="link-box" href="s2t2"></a>
+            <div class="box-text">
+              <div class="box-text-wrap">
+                <h1 class="type-text">VIDEO</h1>
+                <h1 class="name-title">Dear '22</h1>
+                <a class="box-link" href="s2t2">Watch now.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-inner-wrap">
+        <div class="footer-para footer-copyright">
+          <p class="footer-text">Copyright © 2019 Decele'roo. All rights reserved.</p>
+        </div>
+        <div class="footer-para footer-contact">
+          <p class="footer-text">Questions?
+          <a href="mailto:info@deceleroo.com" class="footer-mail">info@deceleroo.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script src="style/jquery.js"></script>
+  <script src="style/custom.js"></script>
+  <script src="style/vh-fix.js"></script>
+</body>

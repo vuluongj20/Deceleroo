@@ -1,0 +1,84 @@
+/* Global mods */
+a:hover {
+  color: #bebebe;
+}
+.nav-background {
+  background-color: #010618;
+}
+.mobile-nav-bar {
+  background-color: rgba(1, 6, 24, 0.97);
+  box-shadow: none;
+}
+.nav-link, .nav-link.logo-normal:hover {
+  color: #bbbbbb;
+}
+.nav-link[href*="podcast"] {
+  color: #777777;
+}
+.mobile-nav-item:hover .nav-link[href*="podcast"] {
+  color: #777777;
+}
+.nav-ham div {
+  background-color: #bbbbbb;
+}
+.footer-wrap {
+  background-color: #010618;
+}
+.footer-text {
+  color: #bbbbbb;
+}
+.footer-mail {
+  color: #aaaaaa;
+}
+/* Main */
+.header-wrap {
+  position: relative;
+  height: 100vh;
+  background-color: #010618;
+}
+.podcast-header-text {
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+.header-text-box {
+  width: 600px;
+  text-align: left;
+}
+.section-wrap {
+  position: relative;
+  height: 80vh;
+  background-color: #010618;
+}
+.text-box {
+  width: 600px;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.text-box.on {
+  opacity: 1;
+}
+.text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 30px rgba(200,200,200, 0.2);
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .text-box, .header-text-box {
+    width: 470px;
+  }
+  .text {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .text-box, .header-text-box {
+    width: 250px;
+  }
+  .text {
+    font-size: 26px;
+  }
+}
