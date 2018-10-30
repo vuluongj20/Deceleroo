@@ -1,6 +1,9 @@
 /* Global mods */
 a:hover {
+  transition: all 0.3s;
   color: #bebebe;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 .nav-background {
   background-color: #010618;

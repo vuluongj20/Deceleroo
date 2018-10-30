@@ -28,8 +28,6 @@ p {
   line-height: 1.3;
 }
 a {
-  -webkit-transition: color 0.2s, text-decoration 0.3s;
-  transition: color 0.2s, text-decoration 0.3s;
   font-family: Source Sans Pro, sans-serif;
   font-weight: 400;
   color: #777777;
@@ -39,7 +37,9 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #8273da;
+  color: #444444;
+  -webkit-text-decoration: underline #ffcb23;
+  text-decoration: underline #ffcb23;
 }
 .text-bold {
   font-weight: 700;
@@ -158,6 +158,7 @@ img:parent {
   color: #dddddd;
 }
 .nav-link:hover {
+  text-decoration: none;
   color: #ffc500;
 }
 .mobile-nav-bar.down .mobile-nav-item {
@@ -270,6 +271,10 @@ img:parent {
   height: 2px;
   width: 30px;
   background-color: #cccccc;
+  transition: background-color 0.2s;
+}
+.x-wrap:hover .cross {
+  background-color: #efefef;
 }
 .cross-1 {
   -webkit-transform: rotate(45deg) translate(5px, -6px);
