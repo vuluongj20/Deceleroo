@@ -1,0 +1,81 @@
+<div ng-repeat="podcast in data">
+  <div class="header-wrap vh">
+    <div class="header-text-wrap center">
+      <h1 class="header-hero" ng-style="{'color': theme.buttonText}">
+        {{podcast.tagline}}
+        <i
+          class="material-icons podcast"
+          >
+          headset
+        </i>
+      </h1>
+      <p>
+        {{podcast.des}}
+      </p>
+    </div>
+  </div>
+  <div
+    class="card-wrap podcast"
+    ng-repeat="card in podcast.content"
+    ng-style="{
+      'background': card.background ? card.background : theme.primary,
+      'cursor': window.innerWidth < 768 ? 'pointer' : ''
+    }"
+    ng-click="window.innerWidth < 768 && deliver(card)"
+    id="{{ idify(card.name) }}"
+    >
+      <div class="text-wrap center">
+        <div class="text-inner-wrap">
+          <h1 class="name" ng-style="{
+            '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
+            'text-decoration': 'underline solid ' + theme.buttonText,
+          }">
+            {{card.order}}. {{card.name}}
+          </h1>
+          <p class="des">
+            {{card.des}}
+          </p>
+          <a class="button">
+            <button
+              class="button"
+              ng-style="{
+                'background': card.buttonHover ? theme.buttonText : theme.button,
+                'color': theme.buttonText
+              }"
+              ng-class="card.buttonHover ? card.lightTheme ? 'tapLight' : 'tapDark' : ''"
+              ng-mouseover="card.buttonHover = true"
+              ng-mouseout="card.buttonHover = false"
+              ng-click="deliver(card)"
+              >
+              <p ng-style="{'color': card.buttonHover ? theme.background : theme.text }">
+                Listen now&nbsp;
+              </p>
+              <i
+                ng-style="{
+                  'color': card.buttonHover ? theme.background : theme.text
+                }"
+                class="material-icons podcast"
+                >
+                headset
+              </i>
+            </button>
+          </a>
+        </div>
+      </div>
+  </div>
+  <div class="trailing-wrap" ng-if="podcast.trailingText">
+    <p>
+      {{podcast.trailingText}}
+    </p>
+  </div>
+</div>
+<footer>
+  <div class="footer-wrap">
+    <p>
+      Copyright © {{now}} Decele'roo
+    </p>
+    <p>
+      Got questions? <a href="mailto:info@deceleroo.com">Email Us!</a>
+    </p>
+  </div>
+</footer>

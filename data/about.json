@@ -1,0 +1,32 @@
+{
+  "tagline": "About Us",
+  "des": "Wondering who made this and why? Well, here's your answer!",
+  "what": {
+    "header": "The Why",
+    "des": "College life can be full of stress and anxiety. But it doesn't have to be! This page is the product of our cumulative effort to promote mental health awareness, and help you enjoy your life to the fullest."
+  },
+  "who": {
+    "header": "The Who",
+    "des": "Get to know the people behind the curtains. Want to learn content production? Interested in discussing student wellness? Or are you just grateful and want to say thanks? Contact us!",
+    "content": [
+      {
+        "name": "Vu Luong",
+        "class": "M21",
+        "pronoun": "him",
+        "function": "Web Developer & Designer",
+        "cover": "vu.jpg",
+        "des": "Vu is an intentioned designer, a data enthusiast, a project leader, and a shameless self-promoter.",
+        "contact": "vu@deceleroo.com"
+      },
+      {
+        "name": "Aakshi Sinha",
+        "class": "M21",
+        "pronoun": "her",
+        "cover": "aakshi.jpg",
+        "function": "Producer: Wise Mind Podcast",
+        "des": "Aakshi is an artist and a musician that wants to show the world how magical human beings can be.",
+        "contact": "aakshi@deceleroo.com"
+      }
+    ]
+  }
+}

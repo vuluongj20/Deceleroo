@@ -1,0 +1,60 @@
+<div class="about-wrap">
+  <div class="header-wrap vh">
+    <div class="header-text-wrap center">
+      <h1 class="header-hero" ng-style="{'color': theme.buttonText}">{{data.tagline}}</h1>
+      <p>
+        {{data.des}}
+      </p>
+    </div>
+  </div>
+  <div class="about-inner-wrap">
+    <div class="what-wrap section">
+      <h1 ng-style="{
+        '-webkit-text-decoration': 'underline solid' + theme.buttonText,
+        'text-decoration': 'underline solid' + theme.buttonText
+        }">{{data.what.header}}</h1>
+      <p>
+        {{data.what.des}}
+      </p>
+    </div>
+    <div class="who-wrap section">
+      <h1 ng-style="{
+        '-webkit-text-decoration': 'underline solid' + theme.buttonText,
+        'text-decoration': 'underline solid' + theme.buttonText
+        }">{{data.who.header}}</h1>
+      <p>
+        {{data.who.des}}
+      </p>
+      <div class="mem-wrap">
+        <div class="mem-box" ng-repeat="person in data.who.content">
+          <div class="image-wrap">
+            <img class="center" ng-src="media/{{person.cover}}">
+          </div>
+          <h1 class="name" ng-style="{
+            '-webkit-text-decoration': 'underline solid' + theme.buttonText,
+            'text-decoration': 'underline solid' + theme.buttonText
+            }"
+            >
+            {{person.name}} - {{person.class}}</h1>
+          <p class="function">
+            {{person.function}}
+          </p>
+          <p class="des">
+            {{person.des}}
+          </p>
+          <a class="contact" ng-href="mailto:{{person.contact}}">Contact {{person.pronoun}} here.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-wrap">
+    <p>
+      Copyright © {{now}} Decele'roo
+    </p>
+    <p>
+      Got questions? <a href="mailto:info@deceleroo.com">Email Us!</a>
+    </p>
+  </div>
+</footer>

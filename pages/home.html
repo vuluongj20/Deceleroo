@@ -1,0 +1,156 @@
+<div class="hero-wrap vh">
+  <div class="hero vh">
+    <div class="hero-text center">
+      <!-- Icon made by Freepik from Flaticon -->
+      <embed id="hero-svg" type="image/svg+xml" src="media/kangaroo.svg" />
+      <p>You're like a kangaroo! Always busy and jumping around. Sometimes it's good to decelerate and relax a bit
+      <i class="material-icons hero-heart-icon">
+        favorite_border
+      </i>
+      This is a space for you to do just that!
+      </p>
+    </div>
+    <div class="arrow-wrap">
+      <p class="arrow-text" ng-style="{'color': theme.text}">
+        Explore
+      </p>
+      <div class="arrow">
+        <div class="line-1">
+        </div>
+        <div class="line-2">
+        </div>
+        <div class="line-3">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="home-section" ng-repeat="section in data">
+  <div class="home-section-title">
+    <h1 class="center">{{section.title}}</h1>
+  </div>
+  <div
+    class="card-wrap home"
+    ng-repeat="card in section.content"
+    ng-style="{
+      'background': card.type == 'podcast' ? darkTheme.primary : card.background ? card.background : theme.primary,
+      'cursor': window.innerWidth < 768 ? 'pointer' : ''
+    }"
+    id="{{ idify(card.name) }}"
+    ng-click="window.innerWidth < 768 && deliver(card)"
+    >
+      <div
+        class="image-wrap"
+        ng-if="card.cover"
+        ng-style="{
+          'left': card.alignLeft? '0' : 'auto',
+          'right': card.alignLeft? 'auto' : '0'
+        }"
+        >
+        <img class="center" ng-src="media/{{card.cover}}" alt="{{ card.alt ? card.alt : ''}}">
+      </div>
+      <div
+        class="text-wrap"
+        ng-style="{
+          'left': card.cover ? card.alignLeft ? 'auto' : '0' : '',
+          'right': card.cover ? card.alignLeft ? '0' : 'auto' : '',
+          'color': card.type == 'podcast' ? darkTheme.text : card.text ? card.text : theme.text,
+          'width': card.cover ? '' : '100%',
+          'background': card.type == 'podcast' ? darkTheme.primary : card.background ? card.background : theme.primary
+        }"
+        ng-class="{'center': card.cover == undefined }"
+        >
+        <div
+          class="text-inner-wrap center"
+          ng-style="{
+            'text-align': card.cover ? card.alignLeft ? 'left' : 'right' : 'center',
+            'width': window.innerWidth < 767 ? '80%' : card.cover ? '' : '60%',
+            'margin': card.cover ? '' : '0px auto'
+          }"
+          >
+          <p
+            class="type"
+            >
+            {{card.type.toUpperCase()}}
+            <i
+              ng-if="window.innerWidth < 768 && card.type == 'video'"
+              ng-style="{
+                'color': card.text? card.text : theme.text
+              }"
+              class="material-icons video"
+              >
+              play_circle_outline
+            </i>
+            <i
+              ng-if="window.innerWidth < 768 && card.type == 'podcast'"
+              ng-style="{
+                'color': card.text? card.text : theme.text
+              }"
+              class="material-icons podcast"
+              >
+              headset
+            </i>
+          </p>
+          <h1
+            class="name"
+            ng-style="{
+              '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
+              'text-decoration': 'underline solid ' + theme.buttonText,
+            }"
+            >
+            {{card.name}}
+          </h1>
+          <p
+            class="des"
+            >
+            {{card.des}}
+          </p>
+          <a class="button" ng-click="deliver(card)">
+            <button
+              class="button"
+              ng-style="{
+                'background': card.text ? card.buttonHover ? theme.buttonText : card.button : card.buttonHover ? theme.buttonText : theme.button,
+                'color': theme.buttonText
+              }"
+              ng-mouseover="card.buttonHover = true"
+              ng-mouseout="card.buttonHover = false"
+              >
+              <p ng-style="{'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text}">
+                {{card.type == 'video' ? 'Watch' : ''
+                || card.type == 'podcast' ? 'Listen' : ''
+              }} now&nbsp;
+              </p>
+              <i
+                ng-if="card.type == 'video'"
+                ng-style="{
+                  'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text
+                }"
+                class="material-icons video"
+                >
+                play_circle_outline
+              </i>
+              <i
+                ng-if="card.type == 'podcast'"
+                ng-style="{
+                  'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text
+                }"
+                class="material-icons podcast"
+                >
+                headset
+              </i>
+            </button>
+          </a>
+        </div>
+      </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-wrap">
+    <p>
+      Copyright © {{now}} Decele'roo
+    </p>
+    <p>
+      Got questions? <a href="mailto:info@deceleroo.com">Email Us!</a>
+    </p>
+  </div>
+</footer>

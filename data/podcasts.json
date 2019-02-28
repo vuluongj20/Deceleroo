@@ -1,0 +1,139 @@
+[
+  {
+    "tagline": "This is the Wise Mind Podcast",
+    "des": "A series of five episodes where we talk about all things emotional intelligence, in collaboration with Mental Health Services at Minerva.",
+    "content": [
+      {
+        "order": "I",
+        "name": "Emotions",
+        "des": "In the first episode, we start by discussing the what and why of emotions.",
+        "link": "wm01.mp3",
+        "complementary": [
+          {
+            "name": "Wise Mind Venn Diagram",
+            "link": "https://docs.google.com/document/d/1hUsBhsZyaBev72j0CPEE5u5C2bn4eVwAMheEi2LYe9U/edit?usp=sharing"
+          },
+          {
+            "name": "Visualization Exercise",
+            "link": "http://learninginaction.com/PDF/Emotions_as_Honored_Guests.pdf"
+          },
+          {
+            "name": "Brown Video on Empathy",
+            "link": "https://www.youtube.com/watch?v=1Evwgu369Jw"
+          }
+        ],
+        "additional": [
+          {
+            "name": "NPR: Discovering Emotion",
+            "link": "https://www.npr.org/2017/06/01/530928414/emotions-part-one"
+          },
+          {
+            "name": "Atlas of Emotions",
+            "link": "http://atlasofemotions.org/#introduction/"
+          },
+          {
+            "name": "3 Types of Empathy",
+            "link": "https://sharpbrains.com/blog/2008/07/11/when-empathy-moves-us-to-action-by-daniel-goleman/"
+          },
+          {
+            "name": "To Avoid the Empathy Trap",
+            "link": "https://www.mindful.org/how-to-avoid-the-empathy-trap/"
+          },
+          {
+            "name": "Professional Empathy Resources",
+            "link": "https://kspope.com/empathy.php"
+          }
+        ]
+      },
+      {
+        "order": "II",
+        "name": "Biological Bases of Emotions",
+        "des": "We dig deeper into the biological aspect of emotions - where they come from, and how being aware of that could help us manage them better.",
+        "link": "wm02.mp3",
+        "complementary": [
+          {
+            "name": "Dan Siegel on the Adolescent Brain",
+            "link": "https://youtu.be/TLULtUPyhog"
+          },
+          {
+            "name": "Yekes-Dodson Law on Performance",
+            "link": "https://opinionator.blogs.nytimes.com/2006/12/27/aiming-for-the-brains-sweet-spot/"
+          },
+          {
+            "name": "Body Scan by Jon Kabat-Zinn (Mindfulness)",
+            "link": "https://www.youtube.com/watch?v=_DTmGtznab4"
+          },
+          {
+            "name": "Mindfulness of Emotions",
+            "link": "https://www.youtube.com/watch?v=h8kBXYj8kDg"
+          }
+        ],
+        "additional": [
+          {
+            "name": "Your Gut as the 'Second Brain'",
+            "link": "https://www.scientificamerican.com/article/gut-second-brain/"
+          },
+          {
+            "name": "How Stress Affects Your Brain",
+            "link": "https://ed.ted.com/lessons/how-stress-affects-your-brain-madhumita-murgia?utm_campaign=social&utm_medium=referral&utm_source=facebook.com&utm_content=lesson&utm_term=science"
+          },
+          {
+            "name": "Emotions as Honored Guests.",
+            "link": "https://learninginaction.com/PDF/Emotions_as_Honored_Guests.pdf"
+          },
+          {
+            "name": "Mindfulness of Difficult Emotions",
+            "link": "https://www.youtube.com/watch?v=_AQnLOg7ysw"
+          }
+        ]
+      },
+      {
+        "order": "III",
+        "name": "Socio-environmental Bases of Emotions",
+        "des": "A look into how environmental and social influences can shape up our emotions.",
+        "link": "wm03.mp3",
+        "complementary": [
+          {
+            "name": "Neurological Responses (3:49-7:22)",
+            "link": "https://www.ted.com/talks/lisa_feldman_barrett_you_aren_t_at_the_mercy_of_your_emotions_your_brain_creates_them?utm_source=newsletter_weekly_2018-01-06&utm_campaign=newsletter_weekly&utm_medium=email&utm_content=talk_of_the_week_image#t-194703"
+          },
+          {
+            "name": "Bronfenbenner’s Ecological Model (Pg. 1)",
+            "link": "https://docs.google.com/document/d/1cH_EzPXEvMVZqjoFNREAZGIoZzozCEu4Yk6OwPCnefI/edit?usp=sharing"
+          },
+          {
+            "name": "Tiffany Watt Smith’s History of Human Emotions",
+            "link": "https://www.ted.com/talks/tiffany_watt_smith_the_history_of_human_emotions"
+          },
+          {
+            "name": "Rest of Lisa Barrett’s TED Talk (11:30-16:30)",
+            "link": "https://www.ted.com/talks/lisa_feldman_barrett_you_aren_t_at_the_mercy_of_your_emotions_your_brain_creates_them?utm_source=newsletter_weekly_2018-01-06&utm_campaign=newsletter_weekly&utm_medium=email&utm_content=talk_of_the_week_image#t-688453"
+          },
+          {
+            "name": "Bookmarking Your “Emotional Language” (Pg. 2)",
+            "link": "https://docs.google.com/document/d/1cH_EzPXEvMVZqjoFNREAZGIoZzozCEu4Yk6OwPCnefI/edit"
+          }
+        ],
+        "additional": [
+          {
+            "name": "Paradigm for Improving College Mental Health",
+            "link": "https://drive.google.com/file/d/0B-_RKUg6-eoJSmVIaTgzdTFua3RyX19tU3ZwR1Vsbm5LVUFR/view?usp=sharing"
+          },
+          {
+            "name": "Why Americans Smile So Much",
+            "link": "https://www.theatlantic.com/science/archive/2017/05/why-americans-smile-so-much/524967/"
+          },
+          {
+            "name": "7 Ways Trauma Can Affect Your Brain.",
+            "link": "https://www.psychologytoday.com/us/blog/the-last-best-cure/201508/7-ways-childhood-adversity-can-change-your-brain"
+          },
+          {
+            "name": "Positive Emotions in Different Languages.",
+            "link": "http://www.bbc.com/future/story/20170126-the-untranslatable-emotions-you-never-knew-you-had"
+          }
+        ]
+      }
+    ],
+    "trailingText": "Patience is key. The fourth and fifth episodes will be released next semester."
+  }
+]

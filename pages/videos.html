@@ -1,0 +1,108 @@
+<div ng-repeat="series in data">
+  <div class="header-wrap vh">
+    <div class="header-text-wrap center">
+      <h1 class="header-hero" ng-style="{'color': theme.buttonText}">
+        {{series.tagline}}
+        <i
+          class="material-icons video"
+          >
+          play_circle_outline
+        </i>
+    </h1>
+      <p>
+        {{series.des}}
+      </p>
+    </div>
+  </div>
+  <div
+    class="card-wrap video"
+    ng-repeat="card in series.content"
+    ng-style="{
+      'background': card.background ? card.background : theme.primary,
+      'cursor': window.innerWidth < 768 ? 'pointer' : ''
+    }"
+    id="{{ idify(card.name) }}"
+    ng-click="window.innerWidth < 768 && deliver(card)"
+    >
+      <div
+        class="image-wrap"
+        ng-style="{
+          'left': card.alignLeft? '0' : 'auto',
+          'right': card.alignLeft? 'auto' : '0'
+        }"
+        >
+        <img class="center" ng-src="media/{{card.cover}}" alt="{{ card.alt ? card.alt : ''}}">
+      </div>
+      <div
+        class="text-wrap"
+        ng-style="{
+          'left': card.alignLeft? 'auto' : '0',
+          'right': card.alignLeft? '0' : 'auto',
+          'color': card.text ? card.text : theme.text,
+          'background': card.background ? card.background : theme.primary,
+        }"
+        >
+        <div
+          class="text-inner-wrap center"
+          ng-style="{'text-align': card.alignLeft ? 'left' : 'right'}"
+          >
+          <p
+            class="type"
+            >
+            {{card.type.toUpperCase()}}
+          </p>
+          <h1
+            class="name"
+            ng-style="{
+              '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
+              'text-decoration': 'underline solid ' + theme.buttonText,
+            }"
+            >
+            {{card.name}}
+          </h1>
+          <p
+            class="des"
+            >
+            {{card.des}}
+          </p>
+          <a
+            class="button"
+            ng-click="deliver(card)"
+            >
+            <button
+              class="button"
+              ng-style="{
+                'background': card.button ? card.buttonHover ? theme.buttonText : card.button : card.buttonHover ? theme.buttonText : theme.button,
+                'color': theme.buttonText
+              }"
+              ng-class="card.buttonHover ? card.lightTheme ? 'tapLight' : 'tapDark' : ''"
+              ng-mouseover="card.buttonHover = true"
+              ng-mouseout="card.buttonHover = false"
+              >
+              <p ng-style="{'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text}">
+                Watch now&nbsp;
+              </p>
+              <i
+                ng-style="{
+                  'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text
+                }"
+                class="material-icons video"
+                >
+                play_circle_outline
+              </i>
+            </button>
+          </a>
+        </div>
+      </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-wrap">
+    <p>
+      Copyright © {{now}} Decele'roo
+    </p>
+    <p>
+      Got questions? <a href="mailto:info@deceleroo.com">Email Us!</a>
+    </p>
+  </div>
+</footer>

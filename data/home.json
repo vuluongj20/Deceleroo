@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Popular",
+    "content": [
+      {
+        "type": "video",
+        "name": "Hairless Apes",
+        "link": "/videos/hairless",
+        "des": "A teaser, and a welcome message for freshmen arriving in SF.",
+        "link": "https://www.youtube.com/embed/FbaV6t_EacM",
+        "cover": "hairless.jpg",
+        "alt": "Khoi seen from behind wearing sunglasses and yellow polo shirt",
+        "alignLeft": true
+      }
+    ]
+  },
+  {
+    "title": "Newly Added",
+    "content": [
+      {
+        "type": "video",
+        "name": "Dear '22",
+        "link": "/podcasts/3",
+        "des": "Some words of wisdom to our dearest Class of 2022, on how to survive and thrive in your first year at Minerva.",
+        "link": "https://www.youtube.com/embed/UHG11Lx_Sbo",
+        "cover": "natalia.jpg",
+        "alt": "Natalia - a Minerva student - in a laid back position, leaning back, adjusting her hair",
+        "background": "#000",
+        "text": "#fff",
+        "button": "#181818",
+        "alignLeft": false
+      },
+      {
+        "type": "podcast",
+        "order": "III",
+        "name": "Socio-environmental Bases of Emotions",
+        "des": "A look into how environmental and social influences can shape up our emotions.",
+        "link": "wm03.mp3",
+        "complementary": [
+          {
+            "name": "Neurological Responses (3:49-7:22)",
+            "link": "https://www.ted.com/talks/lisa_feldman_barrett_you_aren_t_at_the_mercy_of_your_emotions_your_brain_creates_them?utm_source=newsletter_weekly_2018-01-06&utm_campaign=newsletter_weekly&utm_medium=email&utm_content=talk_of_the_week_image#t-194703"
+          },
+          {
+            "name": "Bronfenbenner’s Ecological Model (Pg. 1)",
+            "link": "https://docs.google.com/document/d/1cH_EzPXEvMVZqjoFNREAZGIoZzozCEu4Yk6OwPCnefI/edit?usp=sharing"
+          },
+          {
+            "name": "Tiffany Watt Smith’s History of Human Emotions",
+            "link": "https://www.ted.com/talks/tiffany_watt_smith_the_history_of_human_emotions"
+          },
+          {
+            "name": "Rest of Lisa Barrett’s TED Talk (11:30-16:30)",
+            "link": "https://www.ted.com/talks/lisa_feldman_barrett_you_aren_t_at_the_mercy_of_your_emotions_your_brain_creates_them?utm_source=newsletter_weekly_2018-01-06&utm_campaign=newsletter_weekly&utm_medium=email&utm_content=talk_of_the_week_image#t-688453"
+          },
+          {
+            "name": "Bookmarking Your “Emotional Language” (Pg. 2)",
+            "link": "https://docs.google.com/document/d/1cH_EzPXEvMVZqjoFNREAZGIoZzozCEu4Yk6OwPCnefI/edit"
+          }
+        ],
+        "additional": [
+          {
+            "name": "Paradigm for Improving College Mental Health",
+            "link": "https://drive.google.com/file/d/0B-_RKUg6-eoJSmVIaTgzdTFua3RyX19tU3ZwR1Vsbm5LVUFR/view?usp=sharing"
+          },
+          {
+            "name": "Why Americans Smile So Much",
+            "link": "https://www.theatlantic.com/science/archive/2017/05/why-americans-smile-so-much/524967/"
+          },
+          {
+            "name": "7 Ways Trauma Can Affect Your Brain.",
+            "link": "https://www.psychologytoday.com/us/blog/the-last-best-cure/201508/7-ways-childhood-adversity-can-change-your-brain"
+          },
+          {
+            "name": "Positive Emotions in Different Languages.",
+            "link": "http://www.bbc.com/future/story/20170126-the-untranslatable-emotions-you-never-knew-you-had"
+          }
+        ],
+        "text": "#fff",
+        "button": "#242424"
+      }
+    ]
+  }
+]
