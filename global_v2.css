@@ -11,16 +11,19 @@ body {
   height: auto;
 }
 h1 {
-  font-family: Staatliches, sans-serif;
+  font-family: Staatliches, Impact, sans-serif;
   font-size: 1.8em;
   line-height: 1.4;
 }
 p, a, button {
-  font-family: Roboto Mono, monospace;
+  font-family: Roboto Mono, Courier, monospace;
   font-size: 1em;
 }
 p, i {
   opacity: 0.85;
+}
+.header-text-wrap i {
+  opacity: 1;
 }
 a {
   color: inherit;
@@ -35,6 +38,7 @@ a.active-link {
   opacity: 0.4;
 }
 audio {
+  opacity: 1 !important;
   height: 36px;
   width: 80%;
   border-radius: 00px;
@@ -458,7 +462,7 @@ footer a {
   margin-top: 30px;
 }
 .details-inner-wrap {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
 }
@@ -505,17 +509,13 @@ footer a {
   width: 100%;
   height: 100vh;
   min-height: 600px;
-  background-color: #f9f9f9;
+  background-color: #fbfbfb;
   border-radius: 0px;
   -webkit-transition: all 30ms;
   -o-transition: all 30ms;
   transition: all 30ms;
   overflow: hidden;
   will-change: transform;
-}
-.hero {
-  transform: none !important;
-  border-radius: 0 !important;
 }
 .hero-text {
   position: relative;
@@ -663,6 +663,46 @@ footer a {
   to {
     opacity: 1;
   }
+}
+
+
+/* Articles page */
+.article.details-inner-wrap {
+  background: #fff;
+  overflow: scroll;
+}
+.article.details-inner-wrap p, .article.details-inner-wrap a {
+  font-family: Lato, sans-serif;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+}
+.article-para h1 {
+  font-size: 1.2em;
+}
+.article.details-inner-wrap a {
+  -webkit-text-decoration: underline solid #cacaca;
+  text-decoration: underline solid #cacaca;
+}
+.article.details-inner-wrap a:hover {
+  -webkit-text-decoration: underline solid #333;
+  text-decoration: underline solid #333;
+}
+.article-title h1 {
+  font-size: 2em;
+  margin-top: 3em;
+  margin-bottom: 0;
+  color: #333;
+}
+.article.details-inner-wrap .article-meta p {
+  font-size: 0.85em;
+  margin: 0;
+  opacity: 0.6;
+}
+.article-content, .article-title {
+  width: 85%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* About page */
@@ -857,10 +897,6 @@ footer a {
 @media only screen and (max-height: 480px) {
   .card-wrap:nth-child(2) {
     margin-top: 2em;
-  }
-  .hero {
-    transform: none !important;
-    border-radius: 0 !important;
   }
   .hero-wrap {
     margin-bottom: 2em;

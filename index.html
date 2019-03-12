@@ -2,8 +2,8 @@
 <html lang="en-US" ng-app="deceleroo">
 <head>
   <title>Decele'roo</title>
-  <link rel="stylesheet" href="global.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Staatliches" rel="stylesheet">
+  <link rel="stylesheet" href="global_v2.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Staatliches|Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="Description" content="Wellness content for Minerva students, with articles & videos & podcasts">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -149,7 +149,7 @@
       >
       <div class="details-text-wrap center">
         <h1>{{details.podcast.name}}</h1>
-        <audio controls>
+        <audio controls ng-cloak style="opacity: 0">
           <source ng-src="media/{{details.podcast.link}}" type="audio/mpeg">
         </audio>
         <div class="details-des-wrap">
@@ -182,6 +182,29 @@
         height="85%"
         ng-src="{{trustSrc(details.video.link + '?iv_load_policy=3&color=white')}}"
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    <div class="details-inner-wrap article" ng-if="details.article">
+      <div class="article-title">
+        <h1>{{details.article.name}}</h1>
+        <div class="article-meta">
+          <p>
+            {{details.article.dateWritten}} &nbsp;| &nbsp;{{details.article.wordCount}} min read
+          </p>
+        </div>
+      </div>
+      <div class="article-content">
+        <div class="article-para" ng-repeat="para in details.article.content">
+          <h1 ng-if="para.type == 'header'">
+            {{para.content}}
+          </h1>
+          <p ng-if="para.type == 'text'">
+            {{para.content}}
+          </p>
+          <a ng-if="para.type == 'link'" ng-href="{{para.link}}">
+            {{para.text}}
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.min.js"></script>

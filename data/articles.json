@@ -1,0 +1,64 @@
+{
+  "tagline": "Articles",
+  "des": "Short reads for a better you.",
+  "content": [
+    {
+      "name": "Hairless Apes",
+      "des": "A teaser, and a welcome message for freshmen arriving in SF.",
+      "cover": "hairless.jpg",
+      "alt": "Khoi seen from behind wearing sunglasses and yellow polo shirt",
+      "content": [
+        {
+          "type": "text",
+          "style": "norm",
+          "content":
+            "Human–computer interaction (HCI) researches the design and use of computer technology, focused on the interfaces between people (users) and computers. Researchers in the field of HCI both observe the ways in which humans interact with computers and design technologies that let humans interact with computers in novel ways. As a field of research, human–computer interaction is situated at the intersection of computer science, behavioral sciences, design, media studies, and several other fields of study."
+        },
+        {
+          "type": "header",
+          "content":
+            "First section"
+        },
+        {
+          "type": "text",
+          "content":
+            "Human–computer interaction (HCI) researches the design and use of computer technology, focused on the interfaces between people (users) and computers."
+        },
+        {
+          "type": "link",
+          "text": "First link to be put here",
+          "link": "https://www.vuluong.me"
+        },
+        {
+          "type": "header",
+          "content":
+            "Second section"
+        },
+        {
+          "type": "text",
+          "content":
+            "Human–computer interaction (HCI) researches the design and use of computer technology, focused on the interfaces between people (users) and computers."
+        },
+        {
+          "type": "link",
+          "text": "Second link to be put here",
+          "link": "https://www.vuluong.me"
+        }
+      ],
+      "written": 1552047236971,
+      "lightTheme": true,
+      "alignLeft": true
+    },
+    {
+      "name": "Dear '22",
+      "des": "Some words of wisdom to our dearest Class of 2022, on how to survive and thrive in your first year at Minerva.",
+      "cover": "natalia.jpg",
+      "alt": "Natalia in a laid back position, leaning back, adjusting her hair",
+      "link": "https://www.youtube.com/embed/UHG11Lx_Sbo",
+      "background": "#000",
+      "text": "#fff",
+      "button": "#181818",
+      "alignLeft": false
+    }
+  ]
+}

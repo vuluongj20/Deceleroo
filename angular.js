@@ -2,49 +2,12 @@ let app = angular.module('deceleroo', ['ngRoute']);
 const homeScroll = function () {
   let scrollPos = window.scrollY;
   let windowHeight = window.innerHeight;
-  const hero = document.querySelector('.hero');
   const arrow = document.querySelector('.arrow-wrap');
-  const navButton = document.querySelector('.nav-button.switch-on');
   let heroRatio;
   if (scrollPos < 100) {
     arrow.style.opacity = 1;
   } else {
     arrow.style.opacity = 0;
-  }
-  if (window.innerWidth > 767) {
-    if (scrollPos < windowHeight*0.5) {
-      heroRatio = 1 - scrollPos*0.5/windowHeight;
-      hero.style.transform = "scale(" + heroRatio + ')';
-      hero.style.webkitBorderRadius = 160*(1-heroRatio) + 'px';
-      hero.style.borderRadius = 160*(1-heroRatio) + 'px';
-      hero.style.willChange = "transform";
-      navButton.classList.add('off');
-    } else if (windowHeight*0.5 < scrollPos && scrollPos < windowHeight) {
-      hero.style.transform = "scale(0.75)";
-      hero.style.borderRadius = "40px";
-      hero.style.willChange = "transform";
-      navButton.classList.remove('off');
-    } else {
-      hero.style.transform = "scale(0.75)";
-      hero.style.borderRadius = "40px";
-      hero.style.willChange = "unset";
-    }
-  } else {
-    if (scrollPos < windowHeight*0.2) {
-      heroRatio = 1 - scrollPos*0.5/windowHeight;
-      hero.style.transform = "scale(" + heroRatio + ')';
-      hero.style.webkitBorderRadius = 160*(1-heroRatio) + 'px';
-      hero.style.borderRadius = 160*(1-heroRatio) + 'px';
-      hero.style.willChange = "transform";
-    } else if (windowHeight*0.2 < scrollPos && scrollPos < windowHeight*0.5) {
-      hero.style.transform = "scale(0.9)";
-      hero.style.borderRadius = "40px";
-      hero.style.willChange = "transform";
-    } else {
-      hero.style.transform = "scale(0.9)";
-      hero.style.borderRadius = "40px";
-      hero.style.willChange = "unset";
-    }
   }
 };
 
@@ -91,6 +54,30 @@ app.controller('VideosCon', function($scope, $http) {
     $scope.$parent.details.video = card;
   }
 });
+app.controller('ArticlesCon', function($scope, $http) {
+  $http.get('data/articles.json').then(function(res) {
+    $scope.data = res.data;
+  });
+  $scope.deliver = function(card) {
+    const dateWritten = new Date(card.written);
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    let wordCount = 0;
+    setTimeout(() => {
+      $scope.$parent.scrollPos = window.scrollY;
+      document.querySelector('body').style.overflow = 'hidden';
+      document.querySelector('body').style.position = 'fixed';
+    }, 500);
+    document.querySelector('.details-wrap').classList.add('on');
+    $scope.$parent.details.article = card;
+    $scope.$parent.details.article.dateWritten =  months[dateWritten.getMonth()] + ' ' + dateWritten.getDate() + ', ' + dateWritten.getFullYear();
+    for (let para of card.content) {
+      if (para.type == 'text') {
+        wordCount += para.content.split(' ').length + 1;
+      }
+    }
+    $scope.$parent.details.article.wordCount = Math.ceil(wordCount/265) + 1;
+  }
+});
 app.controller('AboutCon', function($scope, $http) {
   $http.get('data/about.json').then(function(res) {
     $scope.data = res.data;
@@ -103,6 +90,7 @@ app.controller('NavControl', function($scope) {
     "Home",
     "Videos",
     "Podcasts",
+    // "Articles",
     "About"
   ];
   $scope.navOn = function() {
@@ -205,6 +193,11 @@ app.controller('ThemeControl', function($scope, $location, $sce, $window) {
         $scope.theme.buttonText = '#f44336';
         $scope.linesWidth = '75%';
         break;
+      // case '/articles':
+      //   $scope.theme = JSON.parse(JSON.stringify($scope.lightTheme));
+      //   $scope.theme.buttonText = '#000';
+      //   $scope.linesWidth = '75%';
+      //   break;
       case '/about':
         $scope.theme = JSON.parse(JSON.stringify($scope.lightTheme));
         $scope.theme.buttonText = '#8bc34a';
@@ -261,6 +254,10 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl: 'pages/videos.html',
     controller: 'VideosCon'
   })
+  // .when('/articles', {
+  //   templateUrl: 'pages/articles.html',
+  //   controller: 'ArticlesCon'
+  // })
   .when('/about', {
     templateUrl: 'pages/about.html',
     controller: 'AboutCon'
