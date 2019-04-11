@@ -10,22 +10,49 @@
     "des": "Get to know the people behind the curtains. Want to learn content production? Interested in discussing student wellness? Or are you just grateful and want to say thanks? Contact us!",
     "content": [
       {
+        "name": "Thu Nguyen",
+        "class": "M21",
+        "pronoun": "her",
+        "cover": "thu.jpg",
+        "function": "Project Manager & Editor",
+        "des": "Tee is a people supporter, a skincare enthusiast, and a firm believer in retail therapy!",
+        "contact": "thu@minerva.kgi.edu"
+      },
+      {
+        "name": "Sunmisola Ojewumi",
+        "class": "M21",
+        "pronoun": "her",
+        "cover": "sunmi.jpg",
+        "function": "Project Manager & Writer",
+        "des": "Sunmi can brighten up your day in just 5 minutes. She also has a knack for writing and video curation.",
+        "contact": "oluwasunmisola@minerva.kgi.edu"
+      },
+      {
+        "name": "Trang Nguyen",
+        "class": "M21",
+        "pronoun": "her",
+        "cover": "trang.jpg",
+        "function": "Writer & Web Developer",
+        "des": "Trang believes that we do well by doing good. Let's spread kindness and wisdom!",
+        "contact": "trang.nguyen@minerva.kgi.edu"
+      },
+      {
         "name": "Vu Luong",
         "class": "M21",
         "pronoun": "him",
-        "function": "Web Developer & Designer",
+        "function": "Web Developer & Designer, Co-founder",
         "cover": "vu.jpg",
-        "des": "Vu is an intentioned designer, a data enthusiast, a project leader, and a shameless self-promoter.",
-        "contact": "vu@deceleroo.com"
+        "des": "Vu is an intentioned designer, a data enthusiast, and a shameless self-promoter.",
+        "contact": "vuluongj20@gmail.com"
       },
       {
         "name": "Aakshi Sinha",
         "class": "M21",
         "pronoun": "her",
         "cover": "aakshi.jpg",
-        "function": "Producer: Wise Mind Podcast",
+        "function": "Producer: Wise Mind Podcast, Co-founder",
         "des": "Aakshi is an artist and a musician that wants to show the world how magical human beings can be.",
-        "contact": "aakshi@deceleroo.com"
+        "contact": "aakshi.sinha@minerva.kgi.edu"
       }
     ]
   }

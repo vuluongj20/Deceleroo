@@ -4,7 +4,7 @@
     "des": "A series of five episodes where we talk about all things emotional intelligence, in collaboration with Mental Health Services at Minerva.",
     "content": [
       {
-        "order": "I",
+        "order": "EP 1",
         "name": "Emotions",
         "des": "In the first episode, we start by discussing the what and why of emotions.",
         "link": "wm01.mp3",
@@ -46,7 +46,7 @@
         ]
       },
       {
-        "order": "II",
+        "order": "EP 2",
         "name": "Biological Bases of Emotions",
         "des": "We dig deeper into the biological aspect of emotions - where they come from, and how being aware of that could help us manage them better.",
         "link": "wm02.mp3",
@@ -88,7 +88,7 @@
         ]
       },
       {
-        "order": "III",
+        "order": "EP 3",
         "name": "Socio-environmental Bases of Emotions",
         "des": "A look into how environmental and social influences can shape up our emotions.",
         "link": "wm03.mp3",

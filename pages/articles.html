@@ -3,7 +3,7 @@
     <h1 class="header-hero" ng-style="{'color': theme.buttonText}">
       {{data.tagline}}
       <i
-        class="material-icons video"
+        class="material-icons article"
         >
         short_text
       </i>
@@ -14,7 +14,7 @@
   </div>
 </div>
 <div
-  class="card-wrap video"
+  class="card-wrap articles"
   ng-repeat="card in data.content"
   ng-style="{
     'background': card.background ? card.background : theme.primary,
@@ -25,6 +25,7 @@
   >
     <div
       class="image-wrap"
+      ng-if="card.cover"
       ng-style="{
         'left': card.alignLeft? '0' : 'auto',
         'right': card.alignLeft? 'auto' : '0'
@@ -35,28 +36,31 @@
     <div
       class="text-wrap"
       ng-style="{
-        'left': card.alignLeft? 'auto' : '0',
-        'right': card.alignLeft? '0' : 'auto',
-        'color': card.text ? card.text : theme.text,
-        'background': card.background ? card.background : theme.primary,
+        'left': card.cover ? card.alignLeft ? 'auto' : '0' : '',
+        'right': card.cover ? card.alignLeft ? '0' : 'auto' : '',
+        'color': card.type == 'podcast' ? darkTheme.text : card.text ? card.text : theme.text,
+        'width': card.cover ? '' : '100%',
+        'background': card.type == 'podcast' ? darkTheme.primary : card.background ? card.background : theme.primary
       }"
+      ng-class="{'center': card.cover == undefined }"
       >
       <div
         class="text-inner-wrap center"
-        ng-style="{'text-align': card.alignLeft ? 'left' : 'right'}"
+        ng-style="{
+          'text-align': card.cover ? card.alignLeft ? 'left' : 'right' : 'center',
+          'width': window.innerWidth < 767 ? '80%' : card.cover ? '' : '60%',
+          'margin': card.cover ? '' : '0px auto'
+        }"
         >
-        <p
-          class="type"
-          >
-          {{card.type.toUpperCase()}}
-        </p>
         <h1
           class="name"
           ng-style="{
             '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
-            'text-decoration': 'underline solid ' + theme.buttonText,
+            'text-decoration': 'underline solid ' + theme.buttonText
           }"
           >
+          <div class="highlighter" ng-style="{'background-color': theme.buttonText}">
+          </div>
           {{card.name}}
         </h1>
         <p
@@ -64,28 +68,24 @@
           >
           {{card.des}}
         </p>
-        <a
-          class="button"
-          ng-click="deliver(card)"
-          >
+        <a class="button" ng-click="deliver(card)">
           <button
             class="button"
             ng-style="{
-              'background': card.button ? card.buttonHover ? theme.buttonText : card.button : card.buttonHover ? theme.buttonText : theme.button,
+              'background': card.text ? card.buttonHover ? theme.buttonText : card.button : card.buttonHover ? theme.buttonText : theme.button,
               'color': theme.buttonText
             }"
-            ng-class="card.buttonHover ? card.lightTheme ? 'tapLight' : 'tapDark' : ''"
             ng-mouseover="card.buttonHover = true"
             ng-mouseout="card.buttonHover = false"
             >
             <p ng-style="{'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text}">
-              Read now&nbsp;
+             Read now&nbsp;
             </p>
             <i
               ng-style="{
                 'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text
               }"
-              class="material-icons video"
+              class="material-icons article"
               >
               short_text
             </i>

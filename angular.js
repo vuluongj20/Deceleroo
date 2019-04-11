@@ -23,6 +23,20 @@ app.controller('HomeCon', function($scope, $http) {
     }, 500);
     document.querySelector('.details-wrap').classList.add('on');
     $scope.$parent.details[card.type] = card;
+    if (card.type == 'article') {
+      const dateWritten = new Date(card.written);
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+      let wordCount = 0;
+      $scope.details.article.dateWritten =  months[dateWritten.getMonth()] + ' ' + dateWritten.getDate() + ', ' + dateWritten.getFullYear();
+      for (let section of card.content) {
+        for (let para of section) {
+          if (para.type == 'text') {
+            wordCount += para.content.split(' ').length + 1;
+          }
+        }
+      }
+      $scope.details.article.wordCount = Math.ceil(wordCount/265) + 1;
+    }
   }
   document.addEventListener("scroll", homeScroll);
 });
@@ -70,9 +84,11 @@ app.controller('ArticlesCon', function($scope, $http) {
     document.querySelector('.details-wrap').classList.add('on');
     $scope.$parent.details.article = card;
     $scope.$parent.details.article.dateWritten =  months[dateWritten.getMonth()] + ' ' + dateWritten.getDate() + ', ' + dateWritten.getFullYear();
-    for (let para of card.content) {
-      if (para.type == 'text') {
-        wordCount += para.content.split(' ').length + 1;
+    for (let section of card.content) {
+      for (let para of section) {
+        if (para.type == 'text') {
+          wordCount += para.content.split(' ').length + 1;
+        }
       }
     }
     $scope.$parent.details.article.wordCount = Math.ceil(wordCount/265) + 1;
@@ -90,7 +106,7 @@ app.controller('NavControl', function($scope) {
     "Home",
     "Videos",
     "Podcasts",
-    // "Articles",
+    "Articles",
     "About"
   ];
   $scope.navOn = function() {
@@ -120,7 +136,7 @@ app.controller('ThemeControl', function($scope, $location, $sce, $window) {
   });
   $scope.lightTheme = {
     background: '#fff',
-    primary: '#f1f1f1',
+    primary: '#f5f5f5',
     secondary: '#ffc107',
     tertiary: '#999',
     text: '#000',
@@ -190,17 +206,17 @@ app.controller('ThemeControl', function($scope, $location, $sce, $window) {
         break;
       case '/videos':
         $scope.theme = JSON.parse(JSON.stringify($scope.lightTheme));
-        $scope.theme.buttonText = '#f44336';
+        $scope.theme.buttonText = '#ef5350';
         $scope.linesWidth = '75%';
         break;
-      // case '/articles':
-      //   $scope.theme = JSON.parse(JSON.stringify($scope.lightTheme));
-      //   $scope.theme.buttonText = '#000';
-      //   $scope.linesWidth = '75%';
-      //   break;
+      case '/articles':
+        $scope.theme = JSON.parse(JSON.stringify($scope.lightTheme));
+        $scope.theme.buttonText = '#000';
+        $scope.linesWidth = '75%';
+        break;
       case '/about':
         $scope.theme = JSON.parse(JSON.stringify($scope.lightTheme));
-        $scope.theme.buttonText = '#8bc34a';
+        $scope.theme.buttonText = '#7cb342';
         $scope.linesWidth = '75%';
         break;
       default:
@@ -236,6 +252,9 @@ app.controller('ThemeControl', function($scope, $location, $sce, $window) {
   $scope.idify = function(string) {
     return string.toLowerCase().replace(/ /g, '-').replace(/[^a-zA-Z\d\-]/g, '');
   }
+  $scope.getRotate = function(string) {
+    return (string.length%2-0.5)*(1/string.length);
+  }
 });
 
 
@@ -254,10 +273,10 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl: 'pages/videos.html',
     controller: 'VideosCon'
   })
-  // .when('/articles', {
-  //   templateUrl: 'pages/articles.html',
-  //   controller: 'ArticlesCon'
-  // })
+  .when('/articles', {
+    templateUrl: 'pages/articles.html',
+    controller: 'ArticlesCon'
+  })
   .when('/about', {
     templateUrl: 'pages/about.html',
     controller: 'AboutCon'

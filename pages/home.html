@@ -3,11 +3,7 @@
     <div class="hero-text center">
       <!-- Icon made by Freepik from Flaticon -->
       <embed id="hero-svg" type="image/svg+xml" src="media/kangaroo.svg" />
-      <p>You're like a kangaroo! Always busy and jumping around. Sometimes it's good to decelerate and relax a bit
-      <i class="material-icons hero-heart-icon">
-        favorite_border
-      </i>
-      This is a space for you to do just that!
+      <p>You're like a kangaroo! Always busy and jumping around. Sometimes it's good to decelerate and relax a bit. This is a space for you to do just that!
       </p>
     </div>
     <div class="arrow-wrap">
@@ -27,7 +23,26 @@
 </div>
 <div class="home-section" ng-repeat="section in data">
   <div class="home-section-title">
-    <h1 class="center">{{section.title}}</h1>
+    <h1 class="center">{{section.title}}&nbsp;
+      <i
+        ng-if="section.type == 'video'"
+        class="material-icons video"
+        >
+        play_circle_outline
+      </i>
+      <i
+        ng-if="section.type == 'podcast'"
+        class="material-icons podcast"
+        >
+        headset
+      </i>
+      <i
+        ng-if="section.type == 'article'"
+        class="material-icons article"
+        >
+        short_text
+      </i>
+    </h1>
   </div>
   <div
     class="card-wrap home"
@@ -68,37 +83,37 @@
             'margin': card.cover ? '' : '0px auto'
           }"
           >
-          <p
+          <h1
             class="type"
             >
             {{card.type.toUpperCase()}}
             <i
               ng-if="window.innerWidth < 768 && card.type == 'video'"
-              ng-style="{
-                'color': card.text? card.text : theme.text
-              }"
               class="material-icons video"
               >
               play_circle_outline
             </i>
             <i
               ng-if="window.innerWidth < 768 && card.type == 'podcast'"
-              ng-style="{
-                'color': card.text? card.text : theme.text
-              }"
               class="material-icons podcast"
               >
               headset
             </i>
-          </p>
+            <i
+              ng-if="window.innerWidth < 768 && card.type == 'article'"
+              class="material-icons article"
+              >
+              short_text
+            </i>
+          </h1>
           <h1
             class="name"
             ng-style="{
               '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
-              'text-decoration': 'underline solid ' + theme.buttonText,
+              'text-decoration': 'underline solid ' + theme.buttonText
             }"
             >
-            {{card.name}}
+            {{card.order? card.order + '. ' : ''}}{{card.name}}
           </h1>
           <p
             class="des"
@@ -118,6 +133,7 @@
               <p ng-style="{'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text}">
                 {{card.type == 'video' ? 'Watch' : ''
                 || card.type == 'podcast' ? 'Listen' : ''
+                || card.type == 'article' ? 'Read' : ''
               }} now&nbsp;
               </p>
               <i
@@ -137,6 +153,15 @@
                 class="material-icons podcast"
                 >
                 headset
+              </i>
+              <i
+                ng-if="card.type == 'article'"
+                ng-style="{
+                  'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text
+                }"
+                class="material-icons podcast"
+                >
+                short_text
               </i>
             </button>
           </a>

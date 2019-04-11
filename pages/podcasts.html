@@ -26,10 +26,13 @@
     >
       <div class="text-wrap center">
         <div class="text-inner-wrap">
-          <h1 class="name" ng-style="{
-            '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
-            'text-decoration': 'underline solid ' + theme.buttonText,
-          }">
+          <h1 class="name"
+            ng-style="{
+              '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
+              'text-decoration': 'underline solid ' + theme.buttonText
+              }">
+            <div class="highlighter" ng-style="{'background-color': theme.buttonText}">
+            </div>
             {{card.order}}. {{card.name}}
           </h1>
           <p class="des">

@@ -1,64 +1,179 @@
 {
-  "tagline": "Articles",
-  "des": "Short reads for a better you.",
+  "tagline": "Weekly Threes",
+  "des": "Recommended resources, just for you!",
   "content": [
     {
-      "name": "Hairless Apes",
-      "des": "A teaser, and a welcome message for freshmen arriving in SF.",
-      "cover": "hairless.jpg",
-      "alt": "Khoi seen from behind wearing sunglasses and yellow polo shirt",
+      "name": "Week 1",
+      "des": "Resume tips, old people singing, and the benefits of learning new stuff.",
+      "cover": "wt_1.png",
+      "alt": "Roman numeral I on orange paint-spattered background.",
       "content": [
-        {
-          "type": "text",
-          "style": "norm",
-          "content":
-            "Human–computer interaction (HCI) researches the design and use of computer technology, focused on the interfaces between people (users) and computers. Researchers in the field of HCI both observe the ways in which humans interact with computers and design technologies that let humans interact with computers in novel ways. As a field of research, human–computer interaction is situated at the intersection of computer science, behavioral sciences, design, media studies, and several other fields of study."
-        },
-        {
-          "type": "header",
-          "content":
-            "First section"
-        },
-        {
-          "type": "text",
-          "content":
-            "Human–computer interaction (HCI) researches the design and use of computer technology, focused on the interfaces between people (users) and computers."
-        },
-        {
-          "type": "link",
-          "text": "First link to be put here",
-          "link": "https://www.vuluong.me"
-        },
-        {
-          "type": "header",
-          "content":
-            "Second section"
-        },
-        {
-          "type": "text",
-          "content":
-            "Human–computer interaction (HCI) researches the design and use of computer technology, focused on the interfaces between people (users) and computers."
-        },
-        {
-          "type": "link",
-          "text": "Second link to be put here",
-          "link": "https://www.vuluong.me"
-        }
+        [
+          {
+            "type": "header",
+            "content":
+              "Bowl of Wellness"
+          },
+          {
+            "type": "image",
+            "caption": "5 Resume Mistakes You Need to Avoid",
+            "link": "https://www.youtube.com/watch?v=9tdyZWbGWO0",
+            "image": "wt_1_1.jpg"
+          },
+          {
+            "type": "text",
+            "content":
+              "As we are in internship season, our first resource for this week will be related to internships. In this video, Thomas Frank, a popular productivity YouTuber gives top 5 resume mistakes people make, some of the tips are really nice ones that we hadn’t come across before so check it out! "
+          },
+          {
+            "type": "text",
+            "content":
+              "(ProfDev has also put together resources related to resumes and cover letters, we’ll leave a link at the bottom of this article because who wants to dig up The Hub, amirite?) "
+          }
+        ],
+        [
+          {
+            "type": "header",
+            "content":
+              "Slice of Happiness"
+          },
+          {
+            "type": "image",
+            "caption": "Old Men Singing at Tim Horton's",
+            "link": "https://www.youtube.com/watch?v=R0Fpl67p5qk",
+            "image": "wt_1_2.jpg"
+          },
+          {
+            "type": "text",
+            "content":
+              "We hope this video makes you smile just like it made us!"
+          }
+        ],
+        [
+          {
+            "type": "header",
+            "content":
+              "Nugget of Wisdom"
+          },
+          {
+            "type": "image",
+            "link": "https://www.nataliesisson.com/11-benefits-learning-something-new/",
+            "caption": "11 Benefits to Learning Something New",
+            "image": "wt_1_3.jpg"
+          },
+          {
+            "type": "text",
+            "content":
+              "Learn about learning something new! This article explains 11 benefits of learning something new. Have we told you how much we love learning new things?!"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "content":
+              "We hope you enjoy the videos and have a fantastic week! (Don't forget to check out our cool website ;) )"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "content":
+              "Love and wellness,"
+          },
+          {
+            "type": "text",
+            "content":
+              "Deceleroo MiCo and the MHS Team"
+          }
+        ]
       ],
       "written": 1552047236971,
       "lightTheme": true,
       "alignLeft": true
     },
     {
-      "name": "Dear '22",
-      "des": "Some words of wisdom to our dearest Class of 2022, on how to survive and thrive in your first year at Minerva.",
-      "cover": "natalia.jpg",
-      "alt": "Natalia in a laid back position, leaning back, adjusting her hair",
-      "link": "https://www.youtube.com/embed/UHG11Lx_Sbo",
-      "background": "#000",
-      "text": "#fff",
-      "button": "#181818",
-      "alignLeft": false
+      "name": "Week 2",
+      "des": "A Chinese parable, having fun at work, and the history of Happy Birthday.",
+      "cover": "wt_2.png",
+      "alt": "Roman numeral II on yellow paint-spattered background.",
+      "content": [
+        [
+          {
+            "type": "header",
+            "content":
+              "Bowl of Wellness"
+          },
+          {
+            "type": "image",
+            "link": "https://www.youtube.com/watch?v=P3P7f0Zg9wk",
+            "caption": "The Farmer Story",
+            "image": "wt_2_1.jpg"
+          },
+          {
+            "type": "text",
+            "content":
+              "Many times we forget that we don’t have the full picture and we can’t see beyond the now. What you see as bad today may actually be good tomorrow #broadframing #ohnothatHCisgone. In this video, Prince EA reminds us of this using a Chinese parable."
+          }
+        ],
+        [
+          {
+            "type": "header",
+            "content":
+              "Slice of Happiness"
+          },
+          {
+            "type": "image",
+            "link": "https://www.youtube.com/watch?time_continue=63&v=EGheV059UBA",
+            "caption": "'Africa' by Toto",
+            "image": "wt_2_2.jpg"
+          },
+          {
+            "type": "text",
+            "content":
+              "A must-see version of “Africa” by Toto! I bless the rains down in Africaaaaa *music emoji*"
+          }
+        ],
+        [
+          {
+            "type": "header",
+            "content":
+              "Nugget of Wisdom"
+          },
+          {
+            "type": "image",
+            "link": "https://www.youtube.com/watch?v=IwYDhotJgLk",
+            "caption": "The History of Happy Birthday",
+            "image": "wt_2_3.jpg"
+          },
+          {
+            "type": "text",
+            "content":
+              "Did you know that before March 2016, movies that sang the Happy Birthday song had to pay a company for singing it? Learn about the interesting history of the happy birthday song!"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "content":
+              "Have a beautiful week and enjoy the videos! (Don't forget to check out our awesome website ;) )"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "content":
+              "Love and wellness,"
+          },
+          {
+            "type": "text",
+            "content":
+              "Deceleroo MiCo and the MHS Team"
+          }
+        ]
+      ],
+      "written": 1552047236971,
+      "lightTheme": true,
+      "alignLeft": true
     }
   ]
 }

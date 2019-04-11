@@ -2,9 +2,8 @@
 <html lang="en-US" ng-app="deceleroo">
 <head>
   <title>Decele'roo</title>
-  <link rel="stylesheet" href="global_v2.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Staatliches|Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="global_v4.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Staatliches|Lato|Material+Icons" rel="stylesheet">
   <meta name="Description" content="Wellness content for Minerva students, with articles & videos & podcasts">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
@@ -161,7 +160,7 @@
               Complementary resources:
             </p>
             <p ng-repeat="link in details.podcast.complementary">
-              - <a ng-href="link.link">{{link.name}}</a>
+              - <a ng-href="link.link" class="podcast-link">{{link.name}}</a>
             </p>
           </span>
           <span ng-if="details.podcast.additional">
@@ -169,7 +168,7 @@
               Additional resources:
             </p>
             <p ng-repeat="link in details.podcast.additional">
-              - <a ng-href="link.link">{{link.name}}</a>
+              - <a ng-href="link.link" class="podcast-link">{{link.name}}</a>
             </p>
           </span>
         </div>
@@ -193,16 +192,33 @@
         </div>
       </div>
       <div class="article-content">
-        <div class="article-para" ng-repeat="para in details.article.content">
-          <h1 ng-if="para.type == 'header'">
-            {{para.content}}
-          </h1>
-          <p ng-if="para.type == 'text'">
-            {{para.content}}
-          </p>
-          <a ng-if="para.type == 'link'" ng-href="{{para.link}}">
-            {{para.text}}
-          </a>
+        <div class="article-section" ng-repeat="section in details.article.content">
+          <div class="article-para" ng-repeat="para in section">
+            <h1 ng-if="para.type == 'header'">
+              {{para.content}}
+            </h1>
+            <div
+              ng-if="para.type == 'image'"
+              class="article-image"
+              >
+              <img ng-src="media/{{para.image}}">
+              <div class="image-links" ng-if="para.link">
+                <p ng-if="para.caption">
+                  {{para.caption}}
+                </p>
+                <i class="material-icons">
+                  call_made
+                </i>
+              </div>
+              <a class="link-box" ng-if="para.link" ng-href="{{para.link}}"></a>
+            </div>
+            <p ng-if="para.type == 'text'">
+              {{para.content}}
+            </p>
+            <a ng-if="para.type == 'link'" ng-href="{{para.link}}">
+              {{para.text}}
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -210,5 +226,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular-route.min.js"></script>
   <script src="angular.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126879157-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-126879157-3');
+  </script>
 </body>
 </html>

@@ -55,9 +55,11 @@
             class="name"
             ng-style="{
               '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
-              'text-decoration': 'underline solid ' + theme.buttonText,
+              'text-decoration': 'underline solid ' + theme.buttonText
             }"
             >
+            <div class="highlighter" ng-style="{'background-color': theme.buttonText}">
+            </div>
             {{card.name}}
           </h1>
           <p
@@ -86,7 +88,7 @@
                 ng-style="{
                   'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text
                 }"
-                class="material-icons video"
+                class="material-icons material-icons video"
                 >
                 play_circle_outline
               </i>
