@@ -1,179 +1,348 @@
-{
-  "tagline": "Weekly Threes",
-  "des": "Recommended resources, just for you!",
-  "content": [
-    {
-      "name": "Week 1",
-      "des": "Resume tips, old people singing, and the benefits of learning new stuff.",
-      "cover": "wt_1.png",
-      "alt": "Roman numeral I on orange paint-spattered background.",
-      "content": [
-        [
-          {
-            "type": "header",
-            "content":
-              "Bowl of Wellness"
-          },
-          {
-            "type": "image",
-            "caption": "5 Resume Mistakes You Need to Avoid",
-            "link": "https://www.youtube.com/watch?v=9tdyZWbGWO0",
-            "image": "wt_1_1.jpg"
-          },
-          {
-            "type": "text",
-            "content":
-              "As we are in internship season, our first resource for this week will be related to internships. In this video, Thomas Frank, a popular productivity YouTuber gives top 5 resume mistakes people make, some of the tips are really nice ones that we hadn’t come across before so check it out! "
-          },
-          {
-            "type": "text",
-            "content":
-              "(ProfDev has also put together resources related to resumes and cover letters, we’ll leave a link at the bottom of this article because who wants to dig up The Hub, amirite?) "
-          }
+[
+  {
+    "tagline": "Weekly Threes",
+    "des": "Recommended resources, just for you!",
+    "content": [
+      {
+        "name": "Week 1",
+        "des": "Resume tips, old people singing, and the benefits of learning new stuff.",
+        "cover": "wt_1.png",
+        "alt": "Roman numeral I on orange paint-spattered background.",
+        "content": [
+          [
+            {
+              "type": "header",
+              "content":
+                "Bowl of Wellness"
+            },
+            {
+              "type": "image",
+              "caption": "5 Resume Mistakes You Need to Avoid",
+              "link": "https://www.youtube.com/watch?v=9tdyZWbGWO0",
+              "image": "wt_1_1.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "As we are in internship season, our first resource for this week will be related to internships. In this video, Thomas Frank, a popular productivity YouTuber gives top 5 resume mistakes people make, some of the tips are really nice ones that we hadn’t come across before so check it out! "
+            },
+            {
+              "type": "text",
+              "content":
+                "(ProfDev has also put together resources related to resumes and cover letters, we’ll leave a link at the bottom of this article because who wants to dig up The Hub, amirite?) "
+            }
+          ],
+          [
+            {
+              "type": "header",
+              "content":
+                "Slice of Happiness"
+            },
+            {
+              "type": "image",
+              "caption": "Old Men Singing at Tim Horton's",
+              "link": "https://www.youtube.com/watch?v=R0Fpl67p5qk",
+              "image": "wt_1_2.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "We hope this video makes you smile just like it made us!"
+            }
+          ],
+          [
+            {
+              "type": "header",
+              "content":
+                "Nugget of Wisdom"
+            },
+            {
+              "type": "image",
+              "link": "https://www.nataliesisson.com/11-benefits-learning-something-new/",
+              "caption": "11 Benefits to Learning Something New",
+              "image": "wt_1_3.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "Learn about learning something new! This article explains 11 benefits of learning something new. Have we told you how much we love learning new things?!"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "content":
+                "We hope you enjoy the videos and have a fantastic week! (Don't forget to check out our cool website ;) )"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "content":
+                "Love and wellness,"
+            },
+            {
+              "type": "text",
+              "content":
+                "Deceleroo MiCo and the MHS Team"
+            }
+          ]
         ],
-        [
-          {
-            "type": "header",
-            "content":
-              "Slice of Happiness"
-          },
-          {
-            "type": "image",
-            "caption": "Old Men Singing at Tim Horton's",
-            "link": "https://www.youtube.com/watch?v=R0Fpl67p5qk",
-            "image": "wt_1_2.jpg"
-          },
-          {
-            "type": "text",
-            "content":
-              "We hope this video makes you smile just like it made us!"
-          }
+        "written": 1552047236971,
+        "alignLeft": true
+      },
+      {
+        "name": "Week 2",
+        "des": "A Chinese parable, having fun at work, and the history of Happy Birthday.",
+        "cover": "wt_2.png",
+        "alt": "Roman numeral II on yellow paint-spattered background.",
+        "content": [
+          [
+            {
+              "type": "header",
+              "content":
+                "Bowl of Wellness"
+            },
+            {
+              "type": "image",
+              "link": "https://www.youtube.com/watch?v=P3P7f0Zg9wk",
+              "caption": "The Farmer Story",
+              "image": "wt_2_1.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "Many times we forget that we don’t have the full picture and we can’t see beyond the now. What you see as bad today may actually be good tomorrow #broadframing #ohnothatHCisgone. In this video, Prince EA reminds us of this using a Chinese parable."
+            }
+          ],
+          [
+            {
+              "type": "header",
+              "content":
+                "Slice of Happiness"
+            },
+            {
+              "type": "image",
+              "link": "https://www.youtube.com/watch?time_continue=63&v=EGheV059UBA",
+              "caption": "'Africa' by Toto",
+              "image": "wt_2_2.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "A must-see version of “Africa” by Toto! I bless the rains down in Africaaaaa *music emoji*"
+            }
+          ],
+          [
+            {
+              "type": "header",
+              "content":
+                "Nugget of Wisdom"
+            },
+            {
+              "type": "image",
+              "link": "https://www.youtube.com/watch?v=IwYDhotJgLk",
+              "caption": "The History of Happy Birthday",
+              "image": "wt_2_3.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "Did you know that before March 2016, movies that sang the Happy Birthday song had to pay a company for singing it? Learn about the interesting history of the happy birthday song!"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "content":
+                "Have a beautiful week and enjoy the videos! (Don't forget to check out our awesome website ;) )"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "content":
+                "Love and wellness,"
+            },
+            {
+              "type": "text",
+              "content":
+                "Deceleroo MiCo and the MHS Team"
+            }
+          ]
         ],
-        [
-          {
-            "type": "header",
-            "content":
-              "Nugget of Wisdom"
-          },
-          {
-            "type": "image",
-            "link": "https://www.nataliesisson.com/11-benefits-learning-something-new/",
-            "caption": "11 Benefits to Learning Something New",
-            "image": "wt_1_3.jpg"
-          },
-          {
-            "type": "text",
-            "content":
-              "Learn about learning something new! This article explains 11 benefits of learning something new. Have we told you how much we love learning new things?!"
-          }
+        "written": 1552047236971,
+        "lightTheme": true,
+        "alignLeft": true
+      },
+      {
+        "name": "Week 3",
+        "des": "Lies you tell yourself, a german sheperd, and a phenomenal woman.",
+        "cover": "wt_3.png",
+        "alt": "Roman numeral III on blue paint-spattered background.",
+        "content": [
+          [
+            {
+              "type": "header",
+              "content":
+                "Bowl of Wellness"
+            },
+            {
+              "type": "image",
+              "link": "https://www.youtube.com/watch?v=3SpwBmhR1go&index=64&list=PL_qCj-Mp98XsjQjIP3At1QXfKucYhekbg",
+              "caption": "Seven Lies You Believe About Yourself",
+              "image": "wt_3_1.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "Newsflash: Your mind lies to you sometimes! *Shock emoji*. But seriously, we often believe thoughts about ourselves that aren’t true and in this video, you'll learn 7 lies you’re probably believing and why you should stop! (Honestly, though the video is awesome, so really, check it out!!)"
+            }
+          ],
+          [
+            {
+              "type": "header",
+              "content":
+                "Slice of Happiness"
+            },
+            {
+              "type": "image",
+              "link": "https://www.youtube.com/watch?v=sUW0sYknHbE",
+              "caption": "German Shepherd Puppy With Swimmer’s Syndrome",
+              "image": "wt_3_2.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "This video is kind of long but worth it! Hear the story of starfish, the dog who had swimmer’s syndrome but has now overcome that!"
+            }
+          ],
+          [
+            {
+              "type": "header",
+              "content":
+                "Nugget of Wisdom"
+            },
+            {
+              "type": "image",
+              "link": "https://www.youtube.com/watch?v=4wIBCoxuOJ0&t=0s&index=13&list=PL_qCj-Mp98XtHWN18Q_P4UXK2fKPTgxN3",
+              "caption": "How One Scientist Averted a National Health Crisis",
+              "image": "wt_3_3.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "Ever heard of Frances Oldham Kesley? If you haven’t, now’s your chance, learn about the woman who saved thousands of lives and so many unborn children!"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "content":
+                "We hope you enjoy the videos and have a fantastic week! (Don't forget to check out our cool website ;) )"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "content":
+                "Love and wellness,"
+            },
+            {
+              "type": "text",
+              "content":
+                "Deceleroo MiCo and the MHS Team"
+            }
+          ]
         ],
-        [
-          {
-            "type": "text",
-            "content":
-              "We hope you enjoy the videos and have a fantastic week! (Don't forget to check out our cool website ;) )"
-          }
+        "written": 1558465805000,
+        "lightTheme": true,
+        "alignLeft": true
+      },
+      {
+        "name": "Week 4",
+        "des": "One Direction, a wedding dance, and airplane crashes.",
+        "cover": "wt_4.png",
+        "alt": "Roman numeral IV on red paint-spattered background.",
+        "content": [
+          [
+            {
+              "type": "header",
+              "content":
+                "Bowl of Wellness"
+            },
+            {
+              "type": "image",
+              "link": "https://www.youtube.com/watch?v=QJO3ROT-A4E",
+              "caption": "One Direction - What Makes You Beautiful",
+              "image": "wt_4_1.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "This is not our typical wellness video but the words in the song are very important and we feel EVERYONE should know this!"
+            }
+          ],
+          [
+            {
+              "type": "header",
+              "content":
+                "Slice of Happiness"
+            },
+            {
+              "type": "image",
+              "link": "https://www.youtube.com/watch?v=4-94JhLEiN0",
+              "caption": "JK Wedding Entrance Dance",
+              "image": "wt_4_2.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "Graduation anyone?"
+            }
+          ],
+          [
+            {
+              "type": "header",
+              "content":
+                "Nugget of Wisdom"
+            },
+            {
+              "type": "image",
+              "link": "https://www.youtube.com/watch?v=H2tuKiiznsY",
+              "caption": "The Real Reason Boeing's New Plane Crashed Twice",
+              "image": "wt_4_3.jpg"
+            },
+            {
+              "type": "text",
+              "content":
+                "Ethiopian Airlines flight 302 plane crash: 10 March 2019. LionAir, flight 610 plane crash: 20 October 2018. Watch this video to learn about what caused these sad events."
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "content":
+                "We hope you enjoy the videos and have a fantastic week! (Don't forget to check out our cool website ;) )"
+            }
+          ],
+          [
+            {
+              "type": "text",
+              "content":
+                "Love and wellness,"
+            },
+            {
+              "type": "text",
+              "content":
+                "Deceleroo MiCo and the MHS Team"
+            }
+          ]
         ],
-        [
-          {
-            "type": "text",
-            "content":
-              "Love and wellness,"
-          },
-          {
-            "type": "text",
-            "content":
-              "Deceleroo MiCo and the MHS Team"
-          }
-        ]
-      ],
-      "written": 1552047236971,
-      "lightTheme": true,
-      "alignLeft": true
-    },
-    {
-      "name": "Week 2",
-      "des": "A Chinese parable, having fun at work, and the history of Happy Birthday.",
-      "cover": "wt_2.png",
-      "alt": "Roman numeral II on yellow paint-spattered background.",
-      "content": [
-        [
-          {
-            "type": "header",
-            "content":
-              "Bowl of Wellness"
-          },
-          {
-            "type": "image",
-            "link": "https://www.youtube.com/watch?v=P3P7f0Zg9wk",
-            "caption": "The Farmer Story",
-            "image": "wt_2_1.jpg"
-          },
-          {
-            "type": "text",
-            "content":
-              "Many times we forget that we don’t have the full picture and we can’t see beyond the now. What you see as bad today may actually be good tomorrow #broadframing #ohnothatHCisgone. In this video, Prince EA reminds us of this using a Chinese parable."
-          }
-        ],
-        [
-          {
-            "type": "header",
-            "content":
-              "Slice of Happiness"
-          },
-          {
-            "type": "image",
-            "link": "https://www.youtube.com/watch?time_continue=63&v=EGheV059UBA",
-            "caption": "'Africa' by Toto",
-            "image": "wt_2_2.jpg"
-          },
-          {
-            "type": "text",
-            "content":
-              "A must-see version of “Africa” by Toto! I bless the rains down in Africaaaaa *music emoji*"
-          }
-        ],
-        [
-          {
-            "type": "header",
-            "content":
-              "Nugget of Wisdom"
-          },
-          {
-            "type": "image",
-            "link": "https://www.youtube.com/watch?v=IwYDhotJgLk",
-            "caption": "The History of Happy Birthday",
-            "image": "wt_2_3.jpg"
-          },
-          {
-            "type": "text",
-            "content":
-              "Did you know that before March 2016, movies that sang the Happy Birthday song had to pay a company for singing it? Learn about the interesting history of the happy birthday song!"
-          }
-        ],
-        [
-          {
-            "type": "text",
-            "content":
-              "Have a beautiful week and enjoy the videos! (Don't forget to check out our awesome website ;) )"
-          }
-        ],
-        [
-          {
-            "type": "text",
-            "content":
-              "Love and wellness,"
-          },
-          {
-            "type": "text",
-            "content":
-              "Deceleroo MiCo and the MHS Team"
-          }
-        ]
-      ],
-      "written": 1552047236971,
-      "lightTheme": true,
-      "alignLeft": true
-    }
-  ]
-}
+        "written": 1558466831000,
+        "lightTheme": true,
+        "alignLeft": true
+      }
+    ]
+  }
+]

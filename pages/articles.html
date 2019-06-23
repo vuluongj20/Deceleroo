@@ -1,98 +1,100 @@
-<div class="header-wrap vh">
-  <div class="header-text-wrap center">
-    <h1 class="header-hero" ng-style="{'color': theme.buttonText}">
-      {{data.tagline}}
-      <i
-        class="material-icons article"
-        >
-        short_text
-      </i>
-  </h1>
-    <p>
-      {{data.des}}
-    </p>
-  </div>
-</div>
-<div
-  class="card-wrap articles"
-  ng-repeat="card in data.content"
-  ng-style="{
-    'background': card.background ? card.background : theme.primary,
-    'cursor': window.innerWidth < 768 ? 'pointer' : ''
-  }"
-  id="{{ idify(card.name) }}"
-  ng-click="window.innerWidth < 768 && deliver(card)"
-  >
-    <div
-      class="image-wrap"
-      ng-if="card.cover"
-      ng-style="{
-        'left': card.alignLeft? '0' : 'auto',
-        'right': card.alignLeft? 'auto' : '0'
-      }"
-      >
-      <img class="center" ng-src="media/{{card.cover}}" alt="{{ card.alt ? card.alt : ''}}">
+<div class="article-wrap" ng-repeat="series in data">
+  <div class="header-wrap vh">
+    <div class="header-text-wrap center">
+      <h1 class="header-hero" ng-style="{'color': theme.buttonText}">
+        {{series.tagline}}
+        <i
+          class="material-icons article"
+          >
+          short_text
+        </i>
+    </h1>
+      <p>
+        {{series.des}}
+      </p>
     </div>
-    <div
-      class="text-wrap"
-      ng-style="{
-        'left': card.cover ? card.alignLeft ? 'auto' : '0' : '',
-        'right': card.cover ? card.alignLeft ? '0' : 'auto' : '',
-        'color': card.type == 'podcast' ? darkTheme.text : card.text ? card.text : theme.text,
-        'width': card.cover ? '' : '100%',
-        'background': card.type == 'podcast' ? darkTheme.primary : card.background ? card.background : theme.primary
-      }"
-      ng-class="{'center': card.cover == undefined }"
-      >
+  </div>
+  <div
+    class="card-wrap articles"
+    ng-repeat="card in series.content"
+    ng-style="{
+      'background': card.background ? card.background : theme.primary,
+      'cursor': window.innerWidth < 768 ? 'pointer' : ''
+    }"
+    id="{{ idify(card.name) }}"
+    ng-click="window.innerWidth < 768 && deliver(card)"
+    >
       <div
-        class="text-inner-wrap center"
+        class="image-wrap"
+        ng-if="card.cover"
         ng-style="{
-          'text-align': card.cover ? card.alignLeft ? 'left' : 'right' : 'center',
-          'width': window.innerWidth < 767 ? '80%' : card.cover ? '' : '60%',
-          'margin': card.cover ? '' : '0px auto'
+          'left': card.alignLeft? '0' : 'auto',
+          'right': card.alignLeft? 'auto' : '0'
         }"
         >
-        <h1
-          class="name"
+        <img class="center" ng-src="media/{{card.cover}}" alt="{{ card.alt ? card.alt : ''}}">
+      </div>
+      <div
+        class="text-wrap"
+        ng-style="{
+          'left': card.cover ? card.alignLeft ? 'auto' : '0' : '',
+          'right': card.cover ? card.alignLeft ? '0' : 'auto' : '',
+          'color': card.type == 'podcast' ? darkTheme.text : card.text ? card.text : theme.text,
+          'width': card.cover ? '' : '100%',
+          'background': card.type == 'podcast' ? darkTheme.primary : card.background ? card.background : theme.primary
+        }"
+        ng-class="{'center': card.cover == undefined }"
+        >
+        <div
+          class="text-inner-wrap center"
           ng-style="{
-            '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
-            'text-decoration': 'underline solid ' + theme.buttonText
+            'text-align': card.cover ? card.alignLeft ? 'left' : 'right' : 'center',
+            'width': window.innerWidth < 767 ? '80%' : card.cover ? '' : '60%',
+            'margin': card.cover ? '' : '0px auto'
           }"
           >
-          <div class="highlighter" ng-style="{'background-color': theme.buttonText}">
-          </div>
-          {{card.name}}
-        </h1>
-        <p
-          class="des"
-          >
-          {{card.des}}
-        </p>
-        <a class="button" ng-click="deliver(card)">
-          <button
-            class="button"
+          <h1
+            class="name"
             ng-style="{
-              'background': card.text ? card.buttonHover ? theme.buttonText : card.button : card.buttonHover ? theme.buttonText : theme.button,
-              'color': theme.buttonText
+              '-webkit-text-decoration': 'underline solid ' + theme.buttonText,
+              'text-decoration': 'underline solid ' + theme.buttonText
             }"
-            ng-mouseover="card.buttonHover = true"
-            ng-mouseout="card.buttonHover = false"
             >
-            <p ng-style="{'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text}">
-             Read now&nbsp;
-            </p>
-            <i
+            <div class="highlighter" ng-style="{'background-color': theme.buttonText}">
+            </div>
+            {{card.name}}
+          </h1>
+          <p
+            class="des"
+            >
+            {{card.des}}
+          </p>
+          <a class="button" ng-click="deliver(card)">
+            <button
+              class="button"
               ng-style="{
-                'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text
+                'background': card.text ? card.buttonHover ? theme.buttonText : card.button : card.buttonHover ? theme.buttonText : theme.button,
+                'color': theme.buttonText
               }"
-              class="material-icons article"
+              ng-mouseover="card.buttonHover = true"
+              ng-mouseout="card.buttonHover = false"
               >
-              short_text
-            </i>
-          </button>
-        </a>
+              <p ng-style="{'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text}">
+               Read now&nbsp;
+              </p>
+              <i
+                ng-style="{
+                  'color': card.text ? card.buttonHover ? theme.background : card.text : card.buttonHover ? theme.background : theme.text
+                }"
+                class="material-icons article"
+                >
+                short_text
+              </i>
+            </button>
+          </a>
+        </div>
       </div>
-    </div>
+  </div>
 </div>
 <footer>
   <div class="footer-wrap">
