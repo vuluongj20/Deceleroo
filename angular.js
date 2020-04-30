@@ -138,8 +138,8 @@ app.controller('ThemeControl', function($scope, $location, $sce, $window) {
     background: '#fff',
     primary: '#f5f5f5',
     secondary: '#ffc107',
-    tertiary: '#999',
-    text: '#000',
+    tertiary: '#a3a2a1',
+    text: '#131211',
     button: '#e7e7e7',
     buttonText: '#fca500',
     fontSize: window.getComputedStyle(document.querySelector('body')).fontSize.replace('px', '')
