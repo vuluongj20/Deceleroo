@@ -1,5 +1,7 @@
 # Decele'roo
 
+![Decele'roo](feature.jpg)
+
 Decele'roo is a web repository for wellness-related content. It is made by students, for students.
 
 ## Visit the site
